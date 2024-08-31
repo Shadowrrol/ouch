@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ec70f42e979c1610d7bef6fce053af70" label="Stashing" max_length="40" name="x_1521023_stashapp_stashing" type="collection">
+        <element label="Did you do it?" max_length="125" name="did_you_do_it" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Something" mandatory="true" max_length="125" name="something" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Choice" mandatory="true" max_length="40" name="choice" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="choice1" value="choice1"/>
+                <element inactive_on_update="false" label="choice3" value="choice3"/>
+                <element inactive_on_update="false" label="choice2" value="choice2"/>
+            </choice>
+        </element>
+    </element>
+</database>
